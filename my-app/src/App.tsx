@@ -77,9 +77,9 @@ function App() {
     <div className="App">
        <h1>typeScript</h1>
 
-       <User name="hanna" age={22} hasChild={true} sum={sum} father="ghghbb" mother={"mother"}/>
+       <User name="hanna" age={22} hasChild={true} sum={sum} father="ghghbb" mother="mari"/>
        {/* چون فادر اپشنال شده نیازی نیست بنویسیم اجبار نیست*/}
-       <User name="hanna" age={22} hasChild={true} sum={sum} mother={2}/> 
+       <User name="hanna" age={22} hasChild={true} sum={sum} mother="mari"/> 
 
     </div>
   );

@@ -1,4 +1,9 @@
 import React from 'react'
+
+// اسمش یونیون تایپ هست 
+type UsersMother = "mari" | "gfded" | "juy"
+
+
 type User ={
      name: String;
     age:number;
@@ -6,7 +11,10 @@ type User ={
     // این علامت سوال اختیاری یا آپشنال میشه
     father?:String;
     // یعنی نمیدونم تایپشو چی بزارم
-    mother:any;
+    // mother:any;
+    // اینجا تایپ مشخص کردیم پس همینو باید بنویسیم
+    // یونیون تایپ هست اسمش 
+    mother:UsersMother,
     // void یعنی هیچ نداره تاپ
     // اگر هم تایپی داشت مثل نامبر مینویسیم 
 
