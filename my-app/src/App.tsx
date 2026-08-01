@@ -92,15 +92,67 @@
 // export default App;
 
 
-import React from 'react';
-import Article from "./component/Article"
+// import React, { useState } from 'react';
+// import Article from "./component/Article"
+// type State = {
+//   name: String,
+//   age : number,
+// }
+// function App() {
+//   const [state,setState] = useState<State | null>(null);
+//   return (
+//     <div className='App'>
+//       <h1>typeScript</h1>
+//       {
+//         // علامت سوال گذاشتیم چون ممکن نال باشه مقدارش  پس علامت سوال میزاریم 
+//         state?.name
+//       }
+//       {/* <Article>
+//          <h1>عنوان مقاله اول</h1>
+//       </Article> */}
+
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+// import React, { useState } from 'react';
+// import Article from "./component/Article"
+// type State = {
+//   name: String,
+//   age : number,
+// }
+// function App() {
+//   // اگر قرار نال هم بگیره اینو میزاریم 
+//   const [state,setState] = useState<State | null>(null);
+//   return (
+//     <div className='App'>
+//       <h1>typeScript</h1>
+//       {
+//         // علامت سوال گذاشتیم چون ممکن نال باشه مقدارش  پس علامت سوال میزاریم 
+//         state?.name
+//       }
+//       {/* <Article>
+//          <h1>عنوان مقاله اول</h1>
+//       </Article> */}
+
+//     </div>
+//   )
+// }
+
+// export default App
+
+import React, { useState } from 'react'
+import User from './component/User'
 function App() {
+  const [state,setState]=useState<String>("hanna")
   return (
-    <div className='App'>
-      <h1>typeScript</h1>
-      <Article>
-         <h1>عنوان مقاله اول</h1>
-      </Article>
+    <div className="App">
+      {/* اینجا حالا ست استیت و بهش پاس دادیم */}
+      <User value={state} onChange={setState}/>
 
     </div>
   )
