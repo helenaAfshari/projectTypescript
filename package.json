@@ -1,0 +1,23 @@
+{
+  "name": "typescript-projects",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc script.ts -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helenaAfshari/projectTypescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helenaAfshari/projectTypescript/issues"
+  },
+  "homepage": "https://github.com/helenaAfshari/projectTypescript#readme",
+  "description": "",
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
