@@ -42,11 +42,34 @@
 
 
 
+// import React from 'react';
+// import User from './component/User'
+// // بعد از دو نقطه خروجی رو مشخص میکنیم که نامبر هست
+// function sum(a:number,b:number):number{
+//   return a+b;
+// }
+
+// function App() {
+//   return (
+
+//     <div className="App">
+//        <h1>typeScript</h1>
+//        <h2>{sum(5,5)}</h2>
+
+//        <User name="hanna" age={22} hasChild={true}/>
+
+//     </div>
+//   );
+// }
+
+// export default App;
+
 import React from 'react';
 import User from './component/User'
 // بعد از دو نقطه خروجی رو مشخص میکنیم که نامبر هست
-function sum(a:number,b:number):number{
-  return a+b;
+function sum(a:number,b:number){
+  return a+b
+ 
 }
 
 function App() {
@@ -54,13 +77,11 @@ function App() {
 
     <div className="App">
        <h1>typeScript</h1>
-       <h2>{sum(5,5)}</h2>
 
-       <User name="hanna" age={22} hasChild={true}/>
+       <User name="hanna" age={22} hasChild={true} sum={sum}/>
 
     </div>
   );
 }
 
 export default App;
-
