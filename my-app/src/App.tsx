@@ -11,10 +11,17 @@ function App() {
   let array3: String[] = ["d","g"]
   // حالا ترکیبی باشه تایپش هم عدد و هم استرینگ
   let array4:(number|string) []=[1,"rsfs"]
+  // تعریف آبجکت هست با {}
   let user = {
     name:"hanna",
     age:24,
     color:"red",
+  }
+  // جیا بگیره و چه تایپی باشه داخلش 
+  // محدودش کردیم که چی میتونیم بگیره نام و سن محدود شده
+   let user2:{name:String; age:number} = {
+    name:"jfmm",
+    age:25
   }
 
   return (
