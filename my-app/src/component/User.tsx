@@ -41,12 +41,20 @@
 
 import React from 'react'
 
-type User={
-  // هرتایپی برای استیت میزاریم همون تایپ ولیو هم میزاریم مثل خودش
-value:String;
-// این تایپی که خود setstate میگیره
+// اینترفیس ها معمولا برای ابجکت ها استفاده میشن 
+ interface User {
+  value:String;
+// // این تایپی که خود setstate میگیره
 onChange: React.Dispatch<React.SetStateAction<String>>;
-}
+ }
+
+
+// type User={
+//   // هرتایپی برای استیت میزاریم همون تایپ ولیو هم میزاریم مثل خودش
+// value:String;
+// // این تایپی که خود setstate میگیره
+// onChange: React.Dispatch<React.SetStateAction<String>>;
+// }
 function User({value,onChange}:User) {
   return (
     <div>{value}</div>
