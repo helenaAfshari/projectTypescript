@@ -1,5 +1,8 @@
 import React from 'react';
 
+type user2 = {name:String; age:number}
+type array2 = Number[]
+export type array4 = (number|string)[]
 function App() {
   
   let name : String = "ahmad"
@@ -7,10 +10,10 @@ function App() {
   let flag = false
   let array =[1,"fds",false]
   // یعنی این ارایه نامبر هست جنسش 
-  let array2:Number[] = [1,2]
+  let array2:array2 = [1,2]
   let array3: String[] = ["d","g"]
   // حالا ترکیبی باشه تایپش هم عدد و هم استرینگ
-  let array4:(number|string) []=[1,"rsfs"]
+  let array4:array4 =[1,"rsfs"]
   // تعریف آبجکت هست با {}
   let user = {
     name:"hanna",
@@ -19,10 +22,11 @@ function App() {
   }
   // جیا بگیره و چه تایپی باشه داخلش 
   // محدودش کردیم که چی میتونیم بگیره نام و سن محدود شده
-   let user2:{name:String; age:number} = {
+   let user2: user2= {
     name:"jfmm",
     age:25
   }
+
 
   return (
 
