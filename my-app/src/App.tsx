@@ -69,7 +69,6 @@ import User from './component/User'
 // بعد از دو نقطه خروجی رو مشخص میکنیم که نامبر هست
 function sum(a:number,b:number){
   return a+b
- 
 }
 
 function App() {
@@ -78,7 +77,9 @@ function App() {
     <div className="App">
        <h1>typeScript</h1>
 
-       <User name="hanna" age={22} hasChild={true} sum={sum}/>
+       <User name="hanna" age={22} hasChild={true} sum={sum} father="ghghbb" mother={"mother"}/>
+       {/* چون فادر اپشنال شده نیازی نیست بنویسیم اجبار نیست*/}
+       <User name="hanna" age={22} hasChild={true} sum={sum} mother={2}/> 
 
     </div>
   );

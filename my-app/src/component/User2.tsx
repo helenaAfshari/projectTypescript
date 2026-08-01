@@ -12,17 +12,14 @@ type User ={
 
     sum : (a:number,b:number)=>number
 }
-function User({age,hasChild,name,sum,father,mother}:User) {
+const User:React.FC<User>=({age,hasChild,name,sum,father})=> {
   return (
     <div>
          <h2>name:{name}</h2>
          <h2>age:{age}</h2>
          <h2>hasChild:{hasChild}</h2>
          <h2>sum:{sum(5,5)}</h2>
-         <h2>father:{father}</h2>
-         {/* فادر چون اپشنال هست */}
-        <h2>father:{father ?? "g"}</h2>
-        <h2>mother:{mother}</h2>
+       
 
     </div>
   )
