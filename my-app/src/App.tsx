@@ -211,12 +211,60 @@
 // export default App
 
 
-import React from 'react'
-import Button from './component/Button'
+
+// import React from 'react'
+// import Button from './component/Button'
+// function App() {
+//   return (
+//     <Button buttonTitle='buttonTitle' />
+//   )
+// }
+
+
+
+// events
+// import React from 'react'
+// import Button from './component/Button'
+// function App() {
+
+//    const handleClick =(event: React.MouseEvent<HTMLButtonElement, MouseEvent>)=>{
+//    };
+
+// const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+//   const value = e.target.value;
+//   const name = e.target.name;
+
+//   console.log(name, value);
+// };
+//   return (
+//     <div>
+//         <button onClick={handleClick}>Click</button>
+//       <input type='text' onChange={handleChange} />
+//     </div>
+   
+//   )
+// }
+
+// export default App
+
+
+
+
+// ref هارو
+//  بهشون تایپ دادیم و استفاده کردیم
+import React, { useRef } from 'react'
+import Button from './component/Button';
+
 function App() {
+  const ref=useRef<HTMLButtonElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
   return (
-    <Button buttonTitle='buttonTitle' />
+  <div className='App'>
+      <Button ref={ref}>Click</Button>
+    <input type='text' ref={inputRef}/>
+  </div>
   )
 }
 
 export default App
+
