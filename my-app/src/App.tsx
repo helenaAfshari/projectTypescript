@@ -145,16 +145,77 @@
 
 // export default App
 
-import React, { useState } from 'react'
-import User from './component/User'
-function App() {
-  const [state,setState]=useState<String>("hanna")
-  return (
-    <div className="App">
-      {/* اینجا حالا ست استیت و بهش پاس دادیم */}
-      <User value={state} onChange={setState}/>
+// import React, { useState } from 'react'
+// import User from './component/User'
+// function App() {
+//   const [state,setState]=useState<String>("hanna")
+//   return (
+//     <div className="App">
+//       {/* اینجا حالا ست استیت و بهش پاس دادیم */}
+//       <User value={state} onChange={setState}/>
 
-    </div>
+//     </div>
+//   )
+// }
+
+// export default App
+
+// import React from 'react'
+// // ادغام کردن تایپ ها هست
+// type User1 = {
+//    name:String;
+//    age:number;
+// }
+
+// type User2 = User1 & {
+//   children:String[]
+// }
+
+// // حالا استفاده از تایپ ادغام شده
+// let user2:  User2={
+//   age:5,
+//   name:"fgdg",
+//   children:["fdf"]
+// }
+
+
+// // ادغام کردن اینترفیس هست
+// interface User5 {
+//   name3:String,
+//   age5:Number,
+// }
+
+// interface User6{
+//   x:String,
+//   y:Number,
+
+// }
+// interface User10 extends User6{
+//   age6:Number,
+// }
+// // برای استفاده از اینترفیس
+// let User10: User10 = {
+// age6:8,
+// x:"lll",
+// y:55,
+// }
+
+// function App() {
+//   return (
+//     <div>
+
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+import React from 'react'
+import Button from './component/Button'
+function App() {
+  return (
+    <Button buttonTitle='buttonTitle' />
   )
 }
 
