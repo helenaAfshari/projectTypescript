@@ -252,19 +252,36 @@
 
 // ref هارو
 //  بهشون تایپ دادیم و استفاده کردیم
-import React, { useRef } from 'react'
-import Button from './component/Button';
+// import React, { useRef } from 'react'
+// import Button from './component/Button';
 
+// function App() {
+//   const ref=useRef<HTMLButtonElement>(null);
+//   const inputRef = useRef<HTMLInputElement>(null);
+//   return (
+//   <div className='App'>
+//       <Button ref={ref}>Click</Button>
+//     <input type='text' ref={inputRef}/>
+//   </div>
+//   )
+// }
+
+// export default App
+
+
+
+import React from 'react'
+
+type User1={
+  name:String;
+  age:number;
+}
+// اینجا میگیم سن نباشه حذف بشه از یوزر 1
+type User2 = Omit<User1,"age">
 function App() {
-  const ref=useRef<HTMLButtonElement>(null);
-  const inputRef = useRef<HTMLInputElement>(null);
   return (
-  <div className='App'>
-      <Button ref={ref}>Click</Button>
-    <input type='text' ref={inputRef}/>
-  </div>
+    <div>App</div>
   )
 }
 
 export default App
-
