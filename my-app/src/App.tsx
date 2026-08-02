@@ -270,18 +270,38 @@
 
 
 
-import React from 'react'
+// import React from 'react'
 
-type User1={
-  name:String;
-  age:number;
-}
-// اینجا میگیم سن نباشه حذف بشه از یوزر 1
-type User2 = Omit<User1,"age">
-function App() {
-  return (
-    <div>App</div>
-  )
-}
+// type User1={
+//   name:String;
+//   age:number;
+// }
+// // اینجا میگیم سن نباشه حذف بشه از یوزر 1
+// type User2 = Omit<User1,"age">
+// function App() {
+//   return (
+//     <div>App</div>
+//   )
+// }
 
-export default App
+// export default App
+
+// import React, { useEffect } from 'react'
+// import { getUser } from "./utils/localStorage";
+// type User1={
+
+// }
+// function App() {
+//   useEffect(()=>{
+//     // ما اینجا باید از اس استفاده کنیم که به عنوان استرینگ بشناسه
+//     // حتی میتونیم به جای استرینگ بگیم تبدیل بشه به یوزر
+//     // بستگی داره به اون محتویات داخلش  که به چی اس کنیم
+//      const user = JSON.parse(localStorage.getItem("user")as User1)
+//      const user = JSON.parse(localStorage.getItem("user")as string)
+//   },[])
+//   return (
+//     <div>App</div>
+//   )
+// }
+
+// export default App
